@@ -1,9 +1,8 @@
-FROM python:3.9.1-slim-buster
+FROM python:3.12-slim-bullseye
 
 WORKDIR /app
 
-RUN echo 'deb http://deb.debian.org/debian testing main' >> /etc/apt/sources.list \
-  && apt-get update \
+RUN apt-get update \
   && apt-get -y install build-essential pkg-config nano curl wget unzip \
   && apt-get -y install sqlite3 libsqlite3-dev libtiff5 libtiff5-dev libcurl4-openssl-dev libhdf5-dev \
   && apt-get -y install libtbb2 libtbb-dev \
