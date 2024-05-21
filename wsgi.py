@@ -1,3 +1,3 @@
 from pytree import app
 
-app.config['DEBUG'] = False
+app.config["DEBUG"] = False

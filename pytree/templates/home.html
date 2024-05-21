@@ -1,26 +1,35 @@
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>pytree Server</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <h1>pytree server</h1>
-        <p>
-        Well done, it looks like your wsgi flask pytree server is installed correctly.
-        </p>
-        <p>
-        <a href="{{ url_for('get_profile') }}?minLOD=0&maxLOD=5&width=10&coordinates={2538600.0,1181474.0},{2539187.0,1181062.0}&pointCloud=swissSURFACE3D&attributes=%27" target=_blank>This example</a> request should return a json header followed by a (binary) array buffer to use in GeoMapFish 2.3 using following GET parameters:
-        <ul>
+      <h1>pytree server</h1>
+      <p>
+        Well done, it looks like your wsgi flask pytree server is installed
+        correctly.
+      </p>
+      <p>
+        <a
+          href="{{ url_for('get_profile') }}?minLOD=0&maxLOD=5&width=10&coordinates={2538600.0,1181474.0},{2539187.0,1181062.0}&pointCloud=swissSURFACE3D&attributes=%27"
+          target="_blank"
+          >This example</a
+        >
+        request should return a json header followed by a (binary) array buffer
+        to use in GeoMapFish 2.3 using following GET parameters:
+      </p>
+
+      <ul>
         <li>minLOD=0</li>
         <li>maxLOD=5</li>
         <li>width=10</li>
         <li>coordinates={2538600.0,1181474.0},{2539187.0,1181062.0}</li>
         <li>pointCloud=swissSURFACE3D</li>
         <li>attributes=%27</li>
-        </ul>
+      </ul>
     </div>
-</body>
+  </body>
 </html>

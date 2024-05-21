@@ -20,4 +20,3 @@ RUN chmod +x ./start_server.sh \
   && mv ./bin/liblaszip.so /usr/local/lib && chmod +x /usr/local/lib/liblaszip.so && ldconfig \
   && echo "alias ll='ls -lArth'" >> ~/.bashrc && /bin/bash -c "source ~/.bashrc" \
   && echo "Image succcessfully build!"
-
