@@ -34,6 +34,7 @@ def get_yaml_config_vars():
 
 
 @app.route("/")
+@cross_origin()
 def home(name=None):
     return render_template("home.html", name=name)
 
