@@ -6,7 +6,6 @@ RUN apt-get update \
   && apt-get -y install build-essential pkg-config nano curl wget unzip \
   && apt-get -y install sqlite3 libsqlite3-dev libtiff5 libtiff5-dev libcurl4-openssl-dev libhdf5-dev \
   && apt-get -y install libtbb2 libtbb-dev \
-  && apt-get -y install gcc-9-base gcc-9 g++-9 libstdc++-9-dev \
   && apt-get -y install proj-bin gdal-bin libproj-dev libgdal-dev \
   && apt-get -y autoremove --purge && apt-get -y autoclean
 
