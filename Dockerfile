@@ -1,11 +1,11 @@
-FROM python:3.12-slim-bullseye
+FROM python:3.12-slim-trixie
 
 WORKDIR /app
 
 RUN apt-get update \
   && apt-get -y install build-essential pkg-config nano curl wget unzip \
-  && apt-get -y install sqlite3 libsqlite3-dev libtiff5 libtiff5-dev libcurl4-openssl-dev libhdf5-dev \
-  && apt-get -y install libtbb2 libtbb-dev \
+  && apt-get -y install sqlite3 libsqlite3-dev libtiff6 libcurl4-openssl-dev libhdf5-dev \
+  && apt-get -y install libtbb12 libtbb-dev \
   && apt-get -y install proj-bin gdal-bin libproj-dev libgdal-dev \
   && apt-get -y autoremove --purge && apt-get -y autoclean
 
